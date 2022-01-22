@@ -34,5 +34,12 @@ def print_message(should_pour_drink):
     print("You Need to Leave")
 
 
+def test_ShouldPour_21WithID_Yes():
+    assert should_pour(21, True) == True, 'We failed our 21 with ID test'
+
+def test_ShouldPour_21WithoutID_No():
+    assert should_pour(21, False) == False, 'We failed our 21 without ID test'
+
+
 if __name__ == "__main__":
     main()
