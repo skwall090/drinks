@@ -31,7 +31,8 @@ def should_pour(age, has_id):
 def print_message(should_pour_drink):
     if should_pour_drink:
         print("Serve Them A Drink")
-    print("You Need to Leave")
+    else:
+        print("You Need to Leave")
 
 
 def test_ShouldPour_21WithID_Yes():
